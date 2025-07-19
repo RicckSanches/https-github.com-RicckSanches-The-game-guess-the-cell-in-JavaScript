@@ -28,7 +28,30 @@ console.log(arr);
 const randomButton = Math.floor(Math.random() * arr.length);
 console.log(arr[randomButton]);
 
+let randomButtons = [];
 
+while (randomButtons.length < 10) {
+
+        const randomIndex = Math.floor(Math.random() * arr.length);
+        if (!randomButtons.includes(randomIndex)) {
+                randomButtons.push(arr[randomIndex]);
+        }
+
+}
+
+for (let i = 0; i < arr.length; i++) {
+
+        arr[i].addEventListener('click', function (event) {
+                if(randomButtons.includes(arr[i])) {
+                        event.target.style.background= 'green';
+                }
+                else{
+                        event.target.style.background= 'gray';
+                }
+        }
+        );
+
+}
 
 div_1.appendChild(buttonsContainer);
 game.appendChild(div_1);
