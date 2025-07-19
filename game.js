@@ -1,7 +1,9 @@
 const game = document.querySelector('#game');
 
+
 const div_1 = document.createElement("div");
 div_1.className = "div_1";
+
 
 const h1 = document.createElement("h1");
 h1.textContent = 'Угадай ячейку';
@@ -21,6 +23,12 @@ for (let i = 0; i < 100; i++) {
         arr.push(button);
 }
 console.log(arr);
+
+
+const randomButton = Math.floor(Math.random() * arr.length);
+console.log(arr[randomButton]);
+
+
 
 div_1.appendChild(buttonsContainer);
 game.appendChild(div_1);
