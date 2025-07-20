@@ -132,3 +132,48 @@ body {
         opacity: 0;
     }
 }
+.counter {
+    font-size: 20px;
+    margin: 10px 0;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.finish-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+    z-index: 100;
+    display: none; /* Добавляем это свойство */
+    background-color: rgba(199, 66, 66,0.9);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 400px;
+}
+
+.restart-button {
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.restart-button:hover {
+    background-color: #45a049;
+}
+.finish-text {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
